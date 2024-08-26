@@ -180,14 +180,14 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
-	h1 {
+	h1, h2, h3 {
 		color: #ffffff;
 		font-weight: 600;
 		line-height: 1.65;
 		margin: 0 0 1em 0;
 	}
 
-	h2, h3, h4, h5, h6 {
+	h4, h5, h6 {
 		color: #28262C;
 		font-weight: 600;
 		line-height: 1.65;
@@ -3258,29 +3258,21 @@ input, select, textarea {
 			box-shadow: none;
 			position: absolute;
 		}
-
+			/* here!!! */
 			#header.alt.style1 .logo strong {
-				color: #6fc3df;
+				color: #F2DD6E;
 			}
 
 			#header.alt.style2 .logo strong {
-				color: #8d82c4;
+				color: #85C7F2;
 			}
 
 			#header.alt.style3 .logo strong {
-				color: #ec8d81;
+				color: #94618E;
 			}
 
 			#header.alt.style4 .logo strong {
-				color: #e7b788;
-			}
-
-			#header.alt.style5 .logo strong {
-				color: #8ea9e8;
-			}
-
-			#header.alt.style6 .logo strong {
-				color: #87c5a4;
+				color: #F7ECE1;
 			}
 
 		body.is-preload #header.alt {
@@ -3490,21 +3482,21 @@ input, select, textarea {
 			#banner.major.alt {
 				opacity: 0.75;
 			}
-
+		/* now F2DD6E 85C7F2 94618E F7ECE1 */
 		#banner.style1:after {
-			background-color: #998FC7;
+			background-color: #F2DD6E;
 		}
 
 		#banner.style2:after {
-			background-color: #EAC5D8;
+			background-color: #85C7F2;
 		}
 
 		#banner.style3:after {
-			background-color: #F2EFC7;
+			background-color: #94618E;
 		}
 
 		#banner.style4:after {
-			background-color: #ACC12F;
+			background-color: #F7ECE1;
 		}
 
 
