@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Yael Lyshkow Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>Portfolio</strong> <span>by Yael Lyshkow</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="landing.html">Landing</a></li>
+							<li><a href="generic.html">Generic</a></li>
+							<li><a href="elements.html">Elements</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+							<li><a href="#" class="button fit">Log In</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>DICOM Image Conversion</h1>
+									</header>
+									<span class="image main"><img src="images/dev.png" alt="" /></span>
+									<ul class="actions fit small">
+										<li><a href="https://github.com/yaellysh/PolarTransform" target="_blank" class="button primary fit small">Github Repository</a></li>
+										<li><a class="button primary fit small" style="background: #b0b0b0; color: #636363;">Documentation</a></li>
+									</ul>
+
+
+									<div class="row">
+										<div class="col-6 col-12-small">
+
+											<h4 style="color: #FFFFFF;">Libraries</h4>
+											<ul>
+												<li>pydicom</li>
+												<li>cv2</li>
+												<li>numpy</li>
+												<li>PILLOW</li>
+												<li>multiprocessing</li>
+											</ul>
+											<h4 style="color: #FFFFFF;">Software</h4>
+											<ul>
+												<li>Python</li>
+												<li>3D Slicer</li>
+												<li>Weasis</li>
+											</ul>
+
+										</div>
+										<div class="col-6 col-12-small">
+											
+											<video width="600" height="400" controls>
+												<source src="images/dicom_vid.mov" type="video/quicktime">
+												  </video>
+
+										</div>
+											
+									</div>
+
+
+										<h4 style="color: #FFFFFF;">Project Summary</h4>
+										<p>I recently completed a complex project involving the processing and transformation of ultrasound image data and its conversion into 3D DICOM files. Initially, the ultrasound data was provided as a single 416x3840 image containing 80 individual frames, each formatted in the Cartesian coordinate system. However, traditional ultrasound images are typically in a sector scan format, which requires a polar transformation.</p>
+
+										<p>To address this, I began by meticulously splicing out each of the 80 frames from the combined image, ensuring precision in the separation process to maintain the integrity of the data. Each frame was then carefully rotated to align it correctly before applying a polar transformation to convert it from its original Cartesian form into the sector scan shape, which is the standard in conventional ultrasound imaging. This transformation was crucial for accurately representing the anatomical structures in a format recognizable in medical diagnostics. Additionally, the original image quality presented a challenge, as it was insufficient for producing high-resolution outputs. To overcome this, I employed advanced interpolation techniques to enlarge the frames, enhancing their resolution. This process not only improved the clarity and detail of the images but also ensured that the final ultrasound outputs were free of artifacts and noise, making them suitable for clinical use.</p>
+
+										<p>Building on this foundational work, I developed an automated pipeline to convert the processed 2D ultrasound frames into a cohesive 3D DICOM file. This involved implementing algorithms for precise spatial alignment of the slices, ensuring that each frame was correctly positioned relative to the others to accurately reconstruct the volumetric data. Volumetric reconstruction was then performed, combining the aligned slices into a comprehensive 3D model. I optimized the entire process to efficiently handle large datasets, minimizing processing time without sacrificing accuracy. To validate the integrity and accuracy of the final 3D DICOM file, I used industry-standard DICOM viewers, including Weasis, 3D Slicer, and OsiriX, confirming that the reconstructed images met the required clinical standards for diagnostic purposes. This project not only involved the transformation of ultrasound data but also contributed to the creation of high-quality 3D DICOM files, which are critical for accurate medical imaging and diagnosis.</p>
+										<p>My goal working on this project was to create a proof of concept, showing that this could in fact be done and proving that this was a project that was worth more time and investment. While this is the extent of the work I did regarding this, the final goal was to create a true to life, accurate 3D model/ DICOM file from which various measurements could be taken. The data I used was primarily dummy data (i.e. the size of the model I created was not the same as the actual scan) but I was able to demonstrate that this goal was attainable.</p>
+									</div>
+							</section>
+
+					</div>
+
+					
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
